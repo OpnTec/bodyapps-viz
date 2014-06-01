@@ -14,7 +14,7 @@ THREE.prototype = function() {
 	this.skins = [];
 	this.materials = [];
 	this.morphs = [];
-    this.morphslimit=[];
+    	this.morphslimit=[];
 	this.morphslowlimit=[];
 	this.morphshighlimit=[];
 	this.onLoadComplete = function () {};
@@ -45,14 +45,14 @@ THREE.prototype = function() {
 			
 			geometry.computeBoundingBox();
 			geometry.computeVertexNormals();
-           console.log(geometry.animation);
+           
 		
 			mesh = new THREE.SkinnedMesh( geometry, new THREE.MeshFaceMaterial() );
 			scope.root.add( mesh );
-			console.log("heref");
+			
 			var bb = geometry.boundingBox;
 			scope.root.scale.set( config.s, config.s, config.s );
-		scope.root.position.set( config.x, config.y - bb.min.y * config.s, config.z );
+			scope.root.position.set( config.x, config.y - bb.min.y * config.s, config.z );
 
 			mesh.castShadow = true;
 			mesh.receiveShadow = true;
