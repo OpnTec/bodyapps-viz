@@ -25,8 +25,7 @@ THREE.prototype = function() {
 		
 		
 		this.numMorphs = config.morphs.length;
-		console.log(scope.numMorphs);
-		// Character geometry + number of skins
+	// Character geometry + number of skins
 		this.loadCounter = 1 + config.skins.length;
 		
 		// SKINS
@@ -42,14 +41,12 @@ THREE.prototype = function() {
 		var loader = new THREE.JSONLoader();
 		
 		console.log( config.baseUrl + config.character  );
-			console.log("here");
 		loader.load( config.baseUrl + config.character, function( geometry ) {
-			console.log("here the error may pop");
+			
 			geometry.computeBoundingBox();
 			geometry.computeVertexNormals();
            console.log(geometry.animation);
-		//THREE.AnimationHandler.add( geometry.animation );
-
+		
 			mesh = new THREE.SkinnedMesh( geometry, new THREE.MeshFaceMaterial() );
 			scope.root.add( mesh );
 			console.log("heref");
@@ -60,14 +57,12 @@ THREE.prototype = function() {
 			mesh.castShadow = true;
 			mesh.receiveShadow = true;
            
-		//	animation = new THREE.Animation( mesh, geometry.animation.name );
-		//	animation.play();
-			
+		
 			scope.setSkin(0);
 			
 			scope.checkLoadComplete();
 		} );
-	console.log("herehere");
+	
 	};
 	
 	this.setSkin = function( index ) {
