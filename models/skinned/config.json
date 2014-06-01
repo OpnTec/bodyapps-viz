@@ -1,0 +1,13 @@
+{
+	"baseUrl":		"models/skinned/UCS/",
+	"character":	"basis.js",
+	"skins": 		["Highlighted_Muscles.jpg"],
+	"morphs": 		["Chest","Waist"],
+	"morphslimit": 		[88.27,73.81],
+	"morphslowlimit": 		[74.74,63.96],
+	"morphshighlimit": 		[105.55,84.04],
+	"x":	0,
+	"y":	2400,
+	"z":	100,
+	"s":80
+}
