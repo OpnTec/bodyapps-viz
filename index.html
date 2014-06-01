@@ -50,10 +50,9 @@
 			init();
 		
 			animate();
-		console.log("here the error may pop1");
-
+		
 			function init() {
-console.log("here the error may pop2");
+
 				container = document.getElementById( 'container' );
 				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 100000 );
 				camera.position.set(-9.50,3028.228,3324.432);
@@ -61,7 +60,7 @@ console.log("here the error may pop2");
 				scene = new THREE.Scene();
 
 				// LIGHTS
-console.log("here the error may pop3");
+
 
 				var light = new THREE.DirectionalLight( 0xffffff, 1 );
 				light.position.set( 0, -1, 0 );
@@ -76,7 +75,7 @@ console.log("here the error may pop3");
 				container.appendChild( renderer.domElement );
 
 				// CHARACTER
-	console.log("here before CHARACRYE");
+
 				character = new THREE.prototype();
 				console.log("Dads");
 				character.onLoadComplete = function() {
@@ -110,13 +109,11 @@ console.log("here the error may pop3");
 		
 			
 			function setupMorphsGUI() {
-				var params = {
-    width: 128
-}
+				
 				var morphGui = gui.addFolder( "Morphs" );
 				
 				morphConfig = {
-				Shoulder : 237
+				
 				};
 				
 				var morphCallback = function( index ) {
