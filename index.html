@@ -50,7 +50,8 @@
 			init();
 		
 			animate();
-		
+			
+
 			function init() {
 
 				container = document.getElementById( 'container' );
@@ -75,9 +76,8 @@
 				container.appendChild( renderer.domElement );
 
 				// CHARACTER
-
+	
 				character = new THREE.prototype();
-				console.log("Dads");
 				character.onLoadComplete = function() {
 					console.log( "Load Complete" );
 					console.log( character.numSkins + " skins and " + character.numMorphs + " morphtargets loaded." );
@@ -89,11 +89,10 @@
 				}
 				
 				var loader = new THREE.XHRLoader();
-				loader.load("models/skinned/config.json", function ( text ) {
+				loader.load("models/skinned/testconfig.json", function ( text ) {
 
 					var config = JSON.parse( text );
 					character.loadParts( config );
-					
 					scene.add( character.root );
 				} );
 
@@ -112,9 +111,7 @@
 				
 				var morphGui = gui.addFolder( "Morphs" );
 				
-				morphConfig = {
-				
-				};
+				morphConfig = {};
 				
 				var morphCallback = function( index ) {
 					return function () {
@@ -158,7 +155,6 @@
           
 				requestAnimationFrame( animate );
 			
-				//console.log(camera.position);
 				controls.update();
 
 				render();
