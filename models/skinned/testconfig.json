@@ -1,6 +1,6 @@
 {
 	"baseUrl":		"models/skinned/UCS/",
-	"character":	"newbasis.js",
+	"character":	"basis.js",
 	"skins": 		["Highlighted_Muscles.jpg"],
 	"morphs": 		["Height","Chest","Neck","Neck Height","Shoulders","Waist"],
 	"morphslimit": 		[179,96.67,37,12.36,13.07,76.66],
