@@ -1,0 +1,17 @@
+
+			body {
+				color: #000;
+				font-family:Monospace;
+				font-size:15px;
+				text-align:center;
+
+				background-color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#title {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 15px;
+			}
