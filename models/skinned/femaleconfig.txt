@@ -1,0 +1,13 @@
+{
+	"baseUrl":		"models/skinned/UCS/",
+	"character":	"female.js",
+	"skins": 		["Highlighted_Muscles.jpg"],
+	"morphs": 		["Height","Neck Height","Neck","Shoulders","Breast","Bust Girth","Arm Length","Upper Arm Girth","Wrist","Waist","Hip Girth","Hip Height"],
+	"morphslimit"	: 	    [155,7,31,14,85,66,23,27,14,75,100,82],
+	"morphslowlimit": 		[110,5,27,12,70,56,16,22,9,65,86,72],
+	"morphshighlimit": 		[210,9,35,16,100,76,27,32,18,85,114,92],
+	"x":	0,
+	"y":	2400,
+	"z":	100,
+	"s":70
+}
