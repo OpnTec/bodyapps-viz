@@ -75,7 +75,7 @@ THREE.prototype = function() {
 	
 		if ( mesh ) {
 			for ( var i = 0; i < scope.numMorphs; i ++ ) {
-			//console.log(mesh.morphTargetInfluences[ i ]);
+			console.log(scope.numMorphs);
 				mesh.morphTargetInfluences[ i ] = (influences[ scope.morphs[ i ] ]-scope.morphslimit[i]) / (scope.morphshighlimit[i]-scope.morphslowlimit[i]);
 			}
 		}
