@@ -6,12 +6,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/template" id="measurement-list">
 	</head>
 
 	<body>
 		
 		<div id="info">BodyVisualiser for Valentina Project</div>
-        <div id="info"><a href="female.html">Switch to female body.</a></div>
+	        <div id="info"><a href="female.html">Switch to female body.</a></div>
 		<div id="info"><a href="kid.html">Switch to kid's body.</a></div>
 		<div id="container"></div>
 		
@@ -37,7 +38,8 @@
 			var renderer;
 			
 			var mesh;
-
+			//Adding the measurement variable
+			var measurements=[measurement.data.mid_neck_girth,measurement.data]//add other measuremnts here in the order
 			var mouseX = 0, mouseY = 0;
 
 			var windowHalfX = window.innerWidth / 2;
@@ -118,7 +120,7 @@
 				var morphCallback = function( index ) {
 					return function () {
 
-						character.updateMorphs( morphConfig );
+						character.updateMorphs( morphConfig , measurements);
 					}
 				}
 				
