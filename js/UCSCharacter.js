@@ -71,12 +71,12 @@ THREE.prototype = function() {
 		}
 	};
 	
-	this.updateMorphs = function( influences ) {
+	this.updateMorphs = function( influences , measurements ) {
 	
 		if ( mesh ) {
 			for ( var i = 0; i < scope.numMorphs; i ++ ) {
 			console.log(scope.numMorphs);
-				mesh.morphTargetInfluences[ i ] = (influences[ scope.morphs[ i ] ]-scope.morphslimit[i]) / (scope.morphshighlimit[i]-scope.morphslowlimit[i]);
+				mesh.morphTargetInfluences[ i ] = (measurements[ i ]-scope.morphslimit[i]) / (scope.morphshighlimit[i]-scope.morphslowlimit[i]);
 			}
 		}
 	};
