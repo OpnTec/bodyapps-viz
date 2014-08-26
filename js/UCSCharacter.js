@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2014, Fashiontec (http://fashiontec.org)
+ * Licensed under LGPL, Version 3
+ */
 THREE.prototype = function() {
 
 	var scope = this;
