@@ -1,5 +1,7 @@
-# BodyApps 3D Body Visualiser
 [![Build Status](https://travis-ci.org/fossasia/bodyapps-viz.svg?branch=master)](https://travis-ci.org/fossasia/bodyapps-viz)
+[![Join the chat at https://gitter.im/fossasia/bodyapps-android](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fossasia/bodyapps?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+# BodyApps 3D Body Visualiser
 
 3D body visualizer component for #bodyapps project
 
@@ -25,6 +27,14 @@ The App supports the models for a Male , Female and a gender neutral Kids Body w
 * Thigh Girth
 * Lower Leg Length
 * Calf
+
+## Communication
+
+Please join our communication channels.
+
+Mailing List at: https://groups.google.com/forum/#!forum/bodyapps
+
+Gitter chat at: https://gitter.im/fossasia/bodyapps
 
 ## Building the Project
 
