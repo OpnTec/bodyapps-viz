@@ -1,4 +1,5 @@
 # BodyApps 3D Body Visualiser
+[![Build Status](https://travis-ci.org/fossasia/bodyapps-viz.svg?branch=master)](https://travis-ci.org/fossasia/bodyapps-viz)
 
 3D body visualizer component for #bodyapps project
 
