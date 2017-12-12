@@ -38,8 +38,8 @@ Gitter chat at: https://gitter.im/fossasia/bodyapps
 
 ## Building the Project
 
-1.Clone the Master Repo
-2.Locate the folder , and run the index.html (Enable Javascript if not enabled)
+1. Clone the Master Repo
+2. Locate the folder , and run the index.html (Enable Javascript if not enabled)
 
 ## Folders
 The project BodyViz has 3 folders
@@ -66,7 +66,7 @@ Along with this there are three other files
 * femaleconfig.json-config file for the female body.
 * childconfig.json-config file for the kid’s body.
 
-###js
+### js
 * Orbit.js-Developed by three.js org , has functions to set up the camera orbits , and enable 3D toggle view.
 * Three.js-Developed by three.js org , has functions to render the three.js exported models in web view and use Morph Targets to customise the human body Models
 * data.gui.js-Developed by data.gui.js , allows to create sliders and gui for the visualiser.
