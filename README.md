@@ -44,7 +44,7 @@ Gitter chat at: https://gitter.im/fossasia/bodyapps
 ## Folders
 The project BodyViz has 3 folders
 * css -Contains the style sheets for the BodyVisualiser
-* models-Contains the .js files for the Human base models and their morph targets alongwith config files for all the models
+* models-Contains the .js files for the Human base models and their morph targets along with config files for all the models
 * js-Contains three.js and UCSCharacter.js which allows to render and customize the models.
 
 Along with this there are three other files 
@@ -68,7 +68,7 @@ Along with this there are three other files
 
 ###js
 * Orbit.js-Developed by three.js org , has functions to set up the camera orbits , and enable 3D toggle view.
-* Three.js-Developed by three.js org , has functions to render the three.js exported models in web view and use Morph Targets to customise the human body Models
+* Three.js-Developed by three.js org , has functions to render the three.js exported models in web view and use Morph Targets to customize the human body Models
 * data.gui.js-Developed by data.gui.js , allows to create sliders and gui for the visualiser.
 * detector.js-Detects the windows resolution and adapts the visualiser’s resolution as per that
 * UCSCharacter.js-Contains the functions to render call the model data and render it using three.js library.It also has functions to listen to the slider changes and update the body visualiser model as required.
